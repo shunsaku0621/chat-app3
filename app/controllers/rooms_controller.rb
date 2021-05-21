@@ -7,8 +7,8 @@ class RoomsController < ApplicationController
   end
 
   def create
+    # binding.pry
    @room = Room.new(room_params)
-   @room.save
   end
   
     def destroy
